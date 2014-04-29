@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="duzuroApp">
+<head>
+	<title>Duzuro Brainstorming</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="appCtrl">
+
+	<div id="ideaCanvas">
+		<ul>
+			<li class="note" ng-repeat="note in remoteNotes">{{ note }}</li>
+		</ul>
+	</div>
+
+	<div id="touchInput">
+		<input type="text" ng-enter="addNote()" ng-model="noteContents" />
+	</div>
+
+
+	<script type="text/javascript" src="bc/firebase/firebase.js"></script>
+	<script type="text/javascript" src="bc/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bc/angularfire/angularfire.min.js"></script>
+
+	<script type="text/javascript" src="bc/jquery/dist/jquery.min.js"></script>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

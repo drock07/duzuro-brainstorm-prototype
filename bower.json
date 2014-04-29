@@ -1,0 +1,25 @@
+{
+  "name": "duzuro-brainstorm-prototype",
+  "version": "0.0.0",
+  "homepage": "https://github.com/drock07/duzuro-brainstorm-prototype",
+  "authors": [
+    "David Rockwood <david.w.rockwood@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bc",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16",
+    "angularfire": "~0.7.1",
+    "angular-touch": "~1.2.16",
+    "angular-gestures": "~0.2.2",
+    "jquery": "~2.1.0"
+  }
+}
