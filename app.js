@@ -41,7 +41,7 @@ duzuroApp.directive('ngEnter', function () {
 duzuroApp.controller('appCtrl', ['$scope', '$firebase',
 	function ($scope, $firebase) {
 		
-		$scope.notes = $firebase(new Firebase("https://duzurobrainstorm.firebaseio.com/notes"));
+		$scope.notes = $firebase(new Firebase("https://duzurobrainstorm.firebaseio.com/notes-dev"));
 		$scope.notes.$bind($scope, "remoteNotes");
 		$scope.remoteNotes = [];
 
