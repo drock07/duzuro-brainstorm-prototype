@@ -36,11 +36,14 @@ ul {
 	list-style: none;
 }
 
-li.note {
+.note {
 	float: left;
 	margin: 5px;
 	padding: 8px 10px;
 	font-size: 22px;
-	color: white;
-	background-color: gray;
+	background-color: #eee;
+
+	ul {
+		margin-left: 10px;
+	}
 }

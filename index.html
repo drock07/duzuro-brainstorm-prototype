@@ -10,9 +10,9 @@
 <body ng-controller="appCtrl">
 
 	<div id="ideaCanvas">
-		<ul>
-			<li class="note" ng-repeat="note in remoteNotes">{{ note }}</li>
-		</ul>
+		<div class="note" ng-repeat="note in remoteNotes">
+			<tree family="note"></tree>
+		</div>
 	</div>
 
 	<div id="touchInput">
